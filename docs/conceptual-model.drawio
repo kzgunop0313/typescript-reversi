@@ -1,0 +1,28 @@
+<mxfile host="65bd71144e">
+    <diagram id="zVH7qZBtS9GH_Ow4OY2G" name="ページ1">
+        <mxGraphModel dx="408" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="対戦（開始）" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="210" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="盤面" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="390" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="石" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="380" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="白と黒がある" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="500" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;exitX=0.373;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="460" as="sourcePoint"/>
+                        <mxPoint x="270" y="460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

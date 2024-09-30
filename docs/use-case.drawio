@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="tX4yYIf2jE3v00gIXw4w" name="ページ1">
+        <mxGraphModel dx="578" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="リバーシアプリケーション" style="whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="200" width="260" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Player" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="310" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="対戦する" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="280" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="340" as="sourcePoint"/>
+                        <mxPoint x="380" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

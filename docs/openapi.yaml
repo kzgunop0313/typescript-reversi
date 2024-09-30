@@ -1,0 +1,90 @@
+openapi: "3.0.0"
+
+info:
+  title: "udemy-reversi-webapp"
+  version: "1.0.0"
+
+paths:
+  /api/games:
+    get:
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  games:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          format: uuid
+                          description: ゲームのID
+                          example: 123e4567-e89b-12d3-a456-426614174000
+                  createdAt:
+                    type: string
+                  updatedAt:
+                    type: string
+                  turnCount:
+                    type: integer
+
+    post:
+      responses:
+        "201":
+          description: Created
+
+  /api/games/latest/turns/{turnCount}:
+    parameters:
+      - name: turnCount
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  turnCount:
+                    type: integer
+                  board:
+                    type: array
+                    items:
+                      type: array
+                      items:
+                        type: integer
+                  nextDisc:
+                    type: integer
+                  winnerDisc:
+                    type: integer
+  /api/games/latest/turn:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                turnCount:
+                  type: integer
+                move:
+                  type: object
+                  properties:
+                    disc:
+                      type: integer
+                    x:
+                      type: integer
+                    y:
+                      type: integer
+      responses:
+        "200":
+          description: OK
