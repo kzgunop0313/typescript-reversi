@@ -1,12 +1,13 @@
 import express from "express";
 import morgan from "morgan";
-import { errorHandler } from "express-async-errors";
+import "express-async-errors";
 
 const PORT = 3000;
 
 const app = express();
 
 app.use(morgan("dev"));
+app.use(express.static("static", { extensions: ["html"] }));
 
 app.get("/api/hello", async (req, res) => {
   res.json({
